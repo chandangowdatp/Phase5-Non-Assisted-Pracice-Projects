@@ -1,0 +1,22 @@
+1.	Creating a Spring boot application with name “SpringBootApplicationForCloud”
+      a.	Create restcontroller that returns "Wellcome All!!!. This is demo to deploy Spring Boot application on Cloud" String.
+
+2.	Package application as a jar file using mvn
+
+3.	Creating an ec2-instance with name “myWebServer”
+      a.	That contains following inbound rules in security group
+
+4.	Connect our ec2 server using mobaXstream using public ipv4 address, username and private key.
+      public ipv4 address: 3.83.175.87
+      username:ec2-user
+
+5.	Download java in ec2 server using below command:
+         sudo yum install java
+
+6.	Upload jar file into ec2 server and run using below command.
+          java -jar SpringBootApplicationForCloud-0.0.1-SNAPSHOT.jar
+
+7.	Run port 8080 with public ipv4 adress i.e, http://3.83.175.87:8080
+    
+
+
